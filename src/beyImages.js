@@ -3,7 +3,7 @@ let bey = [
     id: 1,
     name: "All Day Slay",
     img: "https://media.giphy.com/media/3o6gb7cN7bwDxAbnS8/giphy.gif",
-    favorite: false
+    favorite: true
   },
   {
     id: 2,

@@ -1,12 +1,25 @@
 import React, { Component } from "react";
 
 class BeyCard extends React.Component {
+
+  state = {
+    favorited: this.props.favorited,
+  }
+
+
+
+  clickFunctionForCard = () => {
+    let beyObj = this.props.beyObj
+    console.log(beyObj)
+    this.props.clickFunctionPropForCard(beyObj)
+  }
+
+
   render() {
-    console.log(this.props);
     return (
       <div>
-        <h3>{/*Bey name goes here*/}</h3>
-        {/*image tag goes here*/}
+        <h3>{this.props.beyObj.name}</h3>
+        <img onClick={this.clickFunctionForCard} src={this.props.beyObj.img}/>
       </div>
     );
   }
